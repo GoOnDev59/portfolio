@@ -82,7 +82,7 @@ const formHint = document.getElementById("formHint");
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (CONTACT_EMAIL === "YOUR_EMAIL@example.com") {
+  if (CONTACT_EMAIL === "omtiw1209@gmail.com") {
     formHint.textContent = "Before using this form, open script.js and replace YOUR_EMAIL@example.com with your email address.";
     formHint.setAttribute("role", "status");
     return;
