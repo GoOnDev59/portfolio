@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Om Tiwari — developer and philosophical thinker.">
+  <title>omTiwari</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Om Tiwari home">
+        <img class="avatar" src="./image67.jpg" alt="Om Tiwari">
+        <span class="brand-name">om tiwari</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-link active" type="button" data-page="home">home</button>
+        <button class="nav-link" type="button" data-page="projects">projects</button>
+        <button class="nav-link" type="button" data-page="contact">contact</button>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch theme">
+        <span id="themeIcon" aria-hidden="true">☼</span>
+      </button>
+    </header>
+
+    <div class="content">
+      <section class="page active" id="home" aria-labelledby="homeTitle">
+        <div class="eyebrow"><span class="status-dot"></span> learning by building</div>
+        <h1 id="homeTitle" class="hero-title"><span class="small-intro">this is</span><br>om<span></h1>
+        <p class="intro">a developer drawn to the philosophy of systemshow they are designed, why they work, and what makes them endure.</p>
+
+        <div class="philosophy">
+          <span class="line-mark" aria-hidden="true"></span>
+          <div>
+            <p class="label">DEV PHILOSOPHY</p>
+            <p class="quote">i treat software as applied philosophy: question assumptions, reduce complexity to its essence, and build systems whose logic is as deliberate as their design.</p>
+          </div>
+        </div>
+
+        <p class="stack-label">TECHNICAL INTERESTS</p>
+        <div class="chips" aria-label="Technical interests">
+          <span>TypeScript</span><span>Distributed Systems</span><span>LLM Orchestration</span><span>PostgreSQL</span><span>System Design</span><span>API Architecture</span><span>Larping</span>
+        </div>
+
+        <div class="actions">
+          <button class="button button-primary" type="button" data-go="projects">Explore projects <span aria-hidden="true">↗</span></button>
+          <button class="button button-secondary" type="button" data-go="contact">Get in touch</button>
+        </div>
+
+        <div class="social-row">
+          <a href="https://github.com/GoOnDev59" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <span class="separator">/</span>
+          <a href="https://www.linkedin.com/in/moaum/" id="linkedinLink" target="_blank" rel="noreferrer" aria-label="LinkedIn link (add your profile URL)">LinkedIn <span class="muted">(add link)</span></a>
+        </div>
+      </section>
+
+      <section class="page" id="projects" aria-labelledby="projectsTitle" hidden>
+        <div class="eyebrow">a few things I've been building</div>
+        <h1 id="projectsTitle">Selected <span class="accent">projects.</span></h1>
+        <p class="body-copy section-lead">Selected work.</p>
+
+        <div class="project-list project-list-two">
+          <article class="project">
+            <div class="project-top"><span class="project-number">01</span><span class="project-kind">Product</span></div>
+            <h2>Nometra</h2>
+            <p>A precision-oriented digital product built around deliberate interaction, coherent systems, and a frictionless user experience.</p>
+            <div class="project-tags"><span>Product Engineering</span><span>Web Architecture</span><span>Interface Systems</span></div>
+            <div class="project-actions">
+              <a class="project-link" href="https://nometra.vercel.app/" target="_blank" rel="noreferrer">Live project <span aria-hidden="true">↗</span></a>
+              <a class="project-link" href="https://github.com/GoOnDev59/Nometra" target="_blank" rel="noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-top"><span class="project-number">02</span><span class="project-kind">Platform</span></div>
+            <h2>GrowNet</h2>
+            <p>A connected platform shaped by scalable thinking, clear abstractions, and the principle that good software should make complexity feel simple.</p>
+            <div class="project-tags"><span>Full-Stack Systems</span><span>Backend Architecture</span><span>Product Design</span></div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/GoOnDev59/gROWNet" target="_blank" rel="noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" id="contact" aria-labelledby="contactTitle" hidden>
+        <div class="eyebrow">have an idea or just want to connect?</div>
+        <h1 id="contactTitle">Let's <span class="accent">talk.</span></h1>
+        <p class="body-copy section-lead">Send a message about a project, collaboration, or anything you'd like to discuss.</p>
+
+        <form id="contactForm" class="contact-form">
+          <div class="field-row">
+            <label class="field">
+              <span>Your name</span>
+              <input id="senderName" name="name" type="text" placeholder="What should I call you?" required maxlength="80">
+            </label>
+            <label class="field">
+              <span>Your email</span>
+              <input id="senderEmail" name="email" type="email" placeholder="you@example.com" required maxlength="120">
+            </label>
+          </div>
+          <label class="field">
+            <span>Subject</span>
+            <input id="messageSubject" name="subject" type="text" placeholder="What's this about?" required maxlength="120">
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea id="messageBody" name="message" rows="4" placeholder="Write your message..." required maxlength="4000"></textarea>
+          </label>
+          <button class="button button-primary send-button" type="submit">Open email to send <span aria-hidden="true">↗</span></button>
+          <p class="form-hint" id="formHint">This opens your default email app with the message ready to send.</p>
+        </form>
+
+        <div class="contact-links">
+          <a href="https://github.com/GoOnDev59" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/moaum/" id="linkedinContact" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Om Tiwari</span>
+      <span>made with curiosity<span class="accent">.</span></span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
